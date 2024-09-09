@@ -191,12 +191,31 @@ body {
 	/* flex-shrink: 1; */
 	/* flex-basis: 300px; */
 	height: 294px;
+	position: relative;
 }
 
 .do-card img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.do-card-title{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-weight: 700;
+	font-size: 14px;
+	height: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(47, 48, 58, .8);
+	overflow: hidden;
+	padding: 10px;
 }
 
 /* FOOTER */
@@ -268,6 +287,11 @@ body {
 	background-color: #F5F4FA;
 	padding-top: 94px;
 }
+.pp-cards img {
+	width: 100%;
+	height: 290px;
+	object-fit: cover;
+}
 
 /* portfolio main */
 
@@ -284,16 +308,14 @@ body {
 	text-decoration: none;
 	color: #212121;
 	font-size: 16px;
-}
-
-.menu-portfolio li{
 	background: #F5F4FA;
-	padding: 6px 0;
+	padding: 10px 27px;
 	border-radius: 4px;
 	box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 	text-align: center;
 }
-.menu-portfolio li:hover{
+
+.menu-portfolio a:hover{
 	background: #2196F3;
 }
 .menu-portfolio li:hover a{
@@ -305,20 +327,41 @@ body {
 	gap: 30px;
 	padding-bottom: 94px;
 }
-div.pfp>div>h2{
+div.pfp h2{
 	font-size: 18px;
 	font-weight: 700;
-	padding: 20px 24px 0;
 	color: #212121;
+	margin-bottom: 5px;
 }
 div.pfp p{
 	font-weight: 400;
-	padding: 0 24px 20px;
 }
-.pfp div{
+.pfp>div>div+div{
+	padding: 20px 24px;
+}
+div.pfp div{
 	border: 1px solid #eee;
+	position: relative;
 }
 
 .container{
 	box-sizing: content-box;
+}
+.pfp-title{
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+	background: rgba(2, 2, 113, 0.707);
+	color: #fff;
+	opacity: 0;
+	padding: 10px;
+}
+/*.pfp-title:hover{
+	opacity: 1;
+}*/
+.pfp div:hover .pfp-title {
+	opacity: 1;
 }

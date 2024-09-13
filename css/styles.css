@@ -365,3 +365,50 @@ div.pfp div{
 .pfp div:hover .pfp-title {
 	opacity: 1;
 }
+.header-menu-item{
+	position: relative;
+}
+
+.filter-first-menu {
+	position: absolute;
+	top: 100%;
+	left: -5px;
+	padding-top: 24px;
+	background: white;
+	display: none;
+}
+.header-menu-item:hover .filter-first-menu{
+	display: block;
+	color: #000000;
+}
+.filter-first-menu li a{
+	display: block;
+	padding: 5px 5px;
+	border-bottom: 1px solid black;
+	box-shadow: 0 3px 2px 0 black;
+}
+.filter-left{
+	position: relative;
+}
+.filter-left ul li{
+	display: flex;
+	position: absolute;
+	right:100%;
+	top: 0;
+	padding: 0 3px 0 0;
+}
+.filter-second-menu{
+	display: none;
+}
+.filter-left:hover .filter-second-menu{
+	display: block;
+}
+.filter-first-menu li a:hover {
+	color: white;
+	background: #000000;
+	border-radius: 4px;
+}
+.filter-second-menu li{
+	background: white;
+}
+

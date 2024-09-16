@@ -392,13 +392,13 @@ div.pfp div{
 }
 .filter-left ul li{
 	display: flex;
-	position: absolute;
-	right:100%;
-	top: 0;
 	padding: 0 3px 0 0;
 }
 .filter-second-menu{
 	display: none;
+	position: absolute;
+	right:100%;
+	top: 0;
 }
 .filter-left:hover .filter-second-menu{
 	display: block;
@@ -411,4 +411,18 @@ div.pfp div{
 .filter-second-menu li{
 	background: white;
 }
+.head-logo{
+	background: url("../img/headlogo.jpg") no-repeat 50%/ cover;
+	border-image:fill 0  linear-gradient(#0004, #0004);
+}
+.img-about-card{
+	width: 270px;
+	height: 120px;
+	background-color:#F5F4FA ;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	text-align: center;
+	align-content: center;
+}
+
 

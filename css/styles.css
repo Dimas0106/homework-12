@@ -415,14 +415,40 @@ div.pfp div{
 	background: url("../img/headlogo.jpg") no-repeat 50%/ cover;
 	border-image:fill 0  linear-gradient(#0004, #0004);
 }
-.img-about-card{
+.img-card-antenna::before{
+	content: '';
+	background:url(../img/antenna\ 1.svg) no-repeat 50% #F5F4FA;
+	display: inline-block;
 	width: 270px;
 	height: 120px;
-	background-color:#F5F4FA ;
-	border-radius: 4px;
 	margin-bottom: 30px;
-	text-align: center;
-	align-content: center;
+	border-radius: 4px;
 }
-
+.img-card-clock::before{
+	content: '';
+	background:url(../img/clock\ 1.svg) no-repeat 50% #F5F4FA;
+	display: inline-block;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+.img-card-diagram::before{
+	content: '';
+	background:url(../img/diagram\ 1.svg) no-repeat 50% #F5F4FA;
+	display: inline-block;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+.img-card-astronaut::before{
+	content: '';
+	background:url(../img/astronaut\ 1.svg) no-repeat 50% #F5F4FA;
+	display: inline-block;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
 

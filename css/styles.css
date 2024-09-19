@@ -107,7 +107,7 @@ body {
 
 .hero {
 	height: 600px;
-	background: #2F303A;
+	background:linear-gradient(#0004,#0004), url(../img/headlogo.jpg) no-repeat 50%/ cover;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -224,6 +224,7 @@ body {
 	padding: 60px 0;
 	background: #2F303A;
 	color: #fff;
+	position: relative;
 }
 
 .footer-logo {
@@ -411,15 +412,11 @@ div.pfp div{
 .filter-second-menu li{
 	background: white;
 }
-.head-logo{
-	background: url("../img/headlogo.jpg") no-repeat 50%/ cover;
-	border-image:fill 0  linear-gradient(#0004, #0004);
-}
+
 .img-card-antenna::before{
 	content: '';
 	background:url(../img/antenna\ 1.svg) no-repeat 50% #F5F4FA;
-	display: inline-block;
-	width: 270px;
+	display: block;
 	height: 120px;
 	margin-bottom: 30px;
 	border-radius: 4px;
@@ -427,8 +424,7 @@ div.pfp div{
 .img-card-clock::before{
 	content: '';
 	background:url(../img/clock\ 1.svg) no-repeat 50% #F5F4FA;
-	display: inline-block;
-	width: 270px;
+	display: block;
 	height: 120px;
 	margin-bottom: 30px;
 	border-radius: 4px;
@@ -436,8 +432,7 @@ div.pfp div{
 .img-card-diagram::before{
 	content: '';
 	background:url(../img/diagram\ 1.svg) no-repeat 50% #F5F4FA;
-	display: inline-block;
-	width: 270px;
+	display: block;
 	height: 120px;
 	margin-bottom: 30px;
 	border-radius: 4px;
@@ -445,10 +440,100 @@ div.pfp div{
 .img-card-astronaut::before{
 	content: '';
 	background:url(../img/astronaut\ 1.svg) no-repeat 50% #F5F4FA;
-	display: inline-block;
-	width: 270px;
+	display: block;
 	height: 120px;
 	margin-bottom: 30px;
 	border-radius: 4px;
 }
+.list{
+	display: flex;
+	gap: 10px;
+	margin: 30px 0;
+	justify-content: center;
+}
+.list a{
+	line-height: 10px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: all 1s linear;
+}
+.list svg{
+	width: 20px;
+	height: 20px;
+	fill: #AFB1B8;
+	transition: all 0.3s linear;
+}
 
+.list a:hover{
+	background: blue;
+}
+.list a:hover svg{
+	fill: white;
+}
+.title-regular{
+	text-align: center;
+	padding-top: 94px;
+	font-size: 36px;
+	font-weight: 700;
+}
+.list-regular{
+	display: flex;
+	gap: 30px;
+	padding: 66px 0 110px;
+}
+.list-regular a svg{
+	width: 106px;
+	height: 60px;
+	fill: #AFB1B8;
+}
+.list-regular li a{ 
+	padding: 16px 32px;
+	border: 1px solid #AFB1B8;
+	display: block;
+	border-radius: 4px;
+}
+.list-regular a:hover svg{
+	fill: #2196F3;
+	transition: all .5s linear;
+}
+.list-regular a:hover{
+	border:1px solid #2196F3;
+	transition: all .5s linear;
+}
+.footer-list{
+	position: absolute;
+	top: 72px;
+	left: 516px;
+}
+.footer-list svg{
+	width: 20px;
+	height: 20px;
+	fill: #fff;
+}
+.footer-list h3{
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.footer-list a{
+	display: block;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	align-content: center;
+	background: #FFFFFF1A;
+	border-radius: 50%;
+}
+.footer-list ul{
+	display: flex;
+	gap: 10px;
+}
+.footer-list a:hover{
+background: #2196F3;
+transition: all .5s ease-in;
+}

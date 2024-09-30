@@ -314,6 +314,7 @@ body {
 	border-radius: 4px;
 	box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 	text-align: center;
+	display: inline-block;
 }
 
 .menu-portfolio a:hover{
@@ -448,7 +449,6 @@ div.pfp div{
 .list{
 	display: flex;
 	gap: 10px;
-	margin: 30px 0;
 	justify-content: center;
 }
 .list a{
@@ -536,4 +536,100 @@ div.pfp div{
 .footer-list a:hover{
 background: #2196F3;
 transition: all .5s ease-in;
+}
+.svg-list{
+	position: absolute;
+	z-index: -1;
+	width: 0;
+	height: 0;
+}
+
+@media (max-width: 480px) {
+	.header-logo img{
+		width: 134px;
+		height: 28px;
+	}
+	.header-menu,
+	.header-menu-right{
+		display: none;
+	}
+	.header-burger{
+		display: block;
+		position: relative;
+		width: 24px;
+		height: 16px;
+		cursor: pointer;
+	}
+	.header-burger::before,
+	.header-burger::after,
+	span{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		background: #000;
+	}
+	.header-burger span{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.header-burger::after{
+		top: auto;
+		bottom: 0;
+	}
+	.menu-portfolio-li{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+	}
+	.pfp div{
+		width: 100%;
+	}
+	.pfp img{
+		object-fit: cover;
+		width: 100%;
+	}
+	.footer {
+		display: flex;
+	}
+	.footer div{
+		text-align: center;
+	}
+	.footer-menu a{
+		align-self: center;
+	}
+	.regular-customers{
+		display: none;
+	}
+	.do{
+		display: none;
+	}
+	.about-cards{
+		display: block;
+		flex-wrap: wrap;
+		width: 100%;
+		flex: 1 1 100%;
+	}
+	.head-logo{
+		width: 100%;
+	}
+	.pp-cards{
+		display: block;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.pp-cards img{
+		height: 460px;
+	}
+	.footer-list{
+		display: none;
+	}
+	.about-cards div{
+		margin-bottom: 30px;
+	}
+	.pp-cards div{
+		margin-bottom: 30px;
+	}
 }
